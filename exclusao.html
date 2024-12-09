@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Excluir Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .buttons {
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-confirm {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-cancel {
+            background-color: #6c757d;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Excluir Cliente</h2>
+        <p>Tem certeza de que deseja excluir o cliente <strong>João da Silva</strong> (CPF: 123.456.789-00)?</p>
+        <div class="buttons">
+            <button class="btn-confirm" onclick="alert('Cliente excluído com sucesso!')">Sim, excluir</button>
+            <button class="btn-cancel" onclick="window.history.back()">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
